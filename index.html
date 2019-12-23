@@ -20,7 +20,7 @@
         <i class="icon icon-quotes-left"></i>
       </span>
       <p class="quote-content animate-slide-in-down">业精于勤，荒于嬉；行成于思，毁于随。</p>
-      <p class="quote-author animate-slide-in-down">《进学解》—— <em>唐·韩愈</em></p>
+      <p class="quote-author animate-slide-in-down">《进学解》—— <em>唐 · 韩愈</em></p>
       <span class="quote-icon quote-icon-end animate-slide-in-up">
         <i class="icon icon-quotes-right"></i>
       </span>
@@ -49,7 +49,6 @@
       var SLIDE_IN_LEFT = { left: 0 };
       var SLIDE_IN_RIGHT = { right: 0 };
 
-      registerCheatCode();
       executeAnimations();
 
       function executeAnimations() {
@@ -104,20 +103,6 @@
           .promise();
       }
 
-      function registerCheatCode() {
-        $(document.body).on('keydown', function (event) {
-          var KEY_B = 66;
-
-          if (event.which === KEY_B) {
-            $('.relocate-location').text('Bookmark Page');
-            $('.relocating').css('opacity', 1);
-
-            window.setTimeout(function () {
-              window.location.href = '/bookmarks.html';
-            }, 1000);
-          }
-        });
-      }
     });
   </script>
 </body>
